@@ -25,7 +25,6 @@ export default function Home() {
   }, [currentPage]);
 
   useEffect(() => {
-    // Filter pokemon based on search term
     if (searchTerm) {
       const filtered = pokemonList.filter(pokemon =>
         pokemon.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -57,7 +56,7 @@ export default function Home() {
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
-    setSearchTerm(''); // Clear search when changing pages
+    setSearchTerm(''); 
   };
 
   const handleSearchChange = (term: string) => {
@@ -98,7 +97,6 @@ export default function Home() {
             ))}
           </div>
           
-          {/* Only show pagination if not searching */}
           {!searchTerm && (
             <Pagination
               currentPage={currentPage}

@@ -24,7 +24,6 @@ export default function PokemonCard({ pokemon }: PokemonCardProps) {
               fill
               className="object-contain"
               onError={(e) => {
-                // Fallback to sprite if official artwork fails
                 const target = e.target as HTMLImageElement;
                 target.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`;
               }}

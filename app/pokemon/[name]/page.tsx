@@ -68,7 +68,6 @@ export default function PokemonDetail() {
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="p-8">
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Image and Basic Info */}
             <div className="text-center">
               <div className="w-80 h-80 mx-auto relative mb-6">
                 {mainImage && (
@@ -89,9 +88,7 @@ export default function PokemonDetail() {
               </p>
             </div>
 
-            {/* Details */}
             <div className="space-y-6">
-              {/* Types */}
               <div>
                 <h2 className="text-xl font-semibold text-gray-800 mb-3">Types</h2>
                 <div className="flex gap-2">
@@ -100,8 +97,6 @@ export default function PokemonDetail() {
                   ))}
                 </div>
               </div>
-
-              {/* Physical Characteristics */}
               <div>
                 <h2 className="text-xl font-semibold text-gray-800 mb-3">Physical Characteristics</h2>
                 <div className="grid grid-cols-2 gap-4">
@@ -120,7 +115,6 @@ export default function PokemonDetail() {
                 </div>
               </div>
 
-              {/* Abilities */}
               <div>
                 <h2 className="text-xl font-semibold text-gray-800 mb-3">Abilities</h2>
                 <div className="space-y-2">
@@ -143,8 +137,6 @@ export default function PokemonDetail() {
               </div>
             </div>
           </div>
-
-          {/* Base Stats */}
           <div className="mt-8 pt-8 border-t border-gray-200">
             <h2 className="text-xl font-semibold text-gray-800 mb-6">Base Stats</h2>
             <div className="grid md:grid-cols-2 gap-6">
